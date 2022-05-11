@@ -1,12 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./Components/Layout/Header";
 
 function App() {
-  return (
-    <div className="App">
-      <h1>mod by b3rking</h1>
-    </div>
-  );
+    return (
+        <React.Fragment>
+            <Header />
+        </React.Fragment>
+    );
 }
 
 export default App;
