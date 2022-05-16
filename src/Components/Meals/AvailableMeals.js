@@ -32,18 +32,18 @@ const DUMMY_MEALS = [
 const MealsSummary = () => {
     return (
         <section className={classes.meals}>
-            <ul>
-                {DUMMY_MEALS.map((meal) => (
-                    <Card>
+            <Card>
+                <ul>
+                    {DUMMY_MEALS.map((meal) => (
                         <MealItem
                             id={meal.id}
                             name={meal.name}
                             description={meal.description}
                             price={meal.price}
                         />
-                    </Card>
-                ))}
-            </ul>
+                    ))}
+                </ul>
+            </Card>
         </section>
     );
 };
